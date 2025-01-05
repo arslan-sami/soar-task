@@ -1,0 +1,125 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1.5rem;
+}
+
+.dashboard-top-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.dashboard-header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.dashboard-header-section h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--heading);
+}
+
+.dashboard-left-section {
+    width: 69%;
+}
+
+.dashboard-card-bottom-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dashboard-header-right-section p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--black);
+}
+
+
+
+.dashboard-bar-chart-container{
+    background-color: var(--headerNav);
+    width: 90%;
+    height: 17rem;
+    margin-top: 4rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.dashboard-right-section{
+    width: 30%;
+}
+
+.dashboard-recent-transactions-container{
+    padding: 0 0 0 1rem;
+}
+
+.dashboard-polar-chart-container{
+    background-color: var(--headerNav);
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-bottom-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.dashboard-bottom-left-section{
+    width: 40%;
+}
+
+.dashboard-bottom-right-section{
+    width: 70%;
+    padding-left: 1rem ;
+}
+
+.line-chart-container {
+    background-color: var(--headerNav);
+    width: 95%;
+    height: 10rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+@media (max-width: 800px) {
+    .dashboard-top-section {
+        flex-direction: column;
+    }
+
+    .dashboard-left-section,
+    .dashboard-right-section {
+        width: 100%;
+    }
+
+    .dashboard-header-right-section {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .dashboard-card-bottom-section {
+        flex-direction: column;
+    }
+
+    .dashboard-bottom-section {
+        flex-direction: column;
+    }
+
+    .dashboard-bottom-left-section,
+    .dashboard-bottom-right-section {
+        width: 100%;
+    }
+
+    .dashboard-bar-chart-container,
+    .dashboard-polar-chart-container,
+    .line-chart-container {
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+    }
+}

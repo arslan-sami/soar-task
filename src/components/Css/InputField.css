@@ -1,0 +1,42 @@
+.input-container {
+    margin: 1rem;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-label {
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+  }
+  
+  .input-field {
+    padding: 0.8rem;
+    border: var(--border);
+    border-radius: 0.7rem;
+    width: 90%;
+    color: var(--text);
+  }
+  
+  .input-field:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.135);
+  }
+  
+  .input-field::placeholder {
+    color: var(--text);
+  }
+  
+.input-wrapper {
+    position: relative;
+  }
+  
+  .chevron-icon {
+    position: absolute;
+    right: 1.2rem;
+    top: 60%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: var(--text);
+  }
+  
